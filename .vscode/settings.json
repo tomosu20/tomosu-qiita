@@ -1,0 +1,6 @@
+{
+    "textlint.autoFixOnSave": true,
+    "textlint.languages": [
+        "markdown"
+    ]
+}
