@@ -2,12 +2,13 @@
 title: AWSを実践
 tags:
   - AWS
+  - WordPress
 private: false
 updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 
@@ -435,6 +436,16 @@ CloudWatch で、アラームを作成する
 3. 閾値を設定
 4. SNS トピックを作成
 5. アラーム名を設定
+
+# AWS無料枠への対応
+
+作成、登録した AWS のサービスをそのまま放置しておくと、無料枠を超えて課金対象になってしまうので、私のほうで取った対応を書き留めておきます。
+
+- 冗長化した EC2 インスタンスは削除しておく（無料枠の使用時間が、稼働台数分消費されちゃうので）
+- 特に構築した WordPress を使わないのであれば、EC2 インスタンスも停止する
+  - EC2 インスタンスを停止したら、紐づけている Elastic IP を解放する
+- 冗長化した DB は、マスタースレーブ構成をやめて、元に戻しておく
+- CloudTrail でログを S3 に保存している場合は、止めておく
 
 # 学習を通しての感想
 
