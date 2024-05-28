@@ -1,5 +1,5 @@
 ---
-title: AWSを実践
+title: AWSを使って1からインフラ構築をしてみる
 tags:
   - WordPress
   - AWS
