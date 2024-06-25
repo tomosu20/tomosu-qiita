@@ -3,8 +3,8 @@ title: Vue.js 完全ガイド2024を受講して学んだこと
 tags:
   - Vue.js
 private: false
-updated_at: ''
-id: null
+updated_at: '2024-06-25T15:02:51+09:00'
+id: b3711bb26ba960502c23
 organization_url_name: null
 slide: false
 ignorePublish: false
