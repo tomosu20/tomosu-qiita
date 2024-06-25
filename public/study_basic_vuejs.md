@@ -65,7 +65,7 @@ template タグは必須。
 </style>
 ```
 
-## script　内の値を template 内で使用する
+## script  内の値を template 内で使用する
 
 template タグ内のマスタッシュ構文で、script 内の値を使用することができる。
 
@@ -75,11 +75,11 @@ const sample = 'hoge'
 </script>
 
 <template>
-  <h1>{{ sample }}</h1>　<!-- hogeが表示される -->
+  <h1>{{ sample }}</h1>  <!-- hogeが表示される -->
 </template>
 ```
 
-## script　内の関数を template 内で使用する
+## script  内の関数を template 内で使用する
 
 クリックされたときに、script 内で定義したメソッドを実行したい場合、`@click`に関数名を指定することで、実現することができる。
 
@@ -94,7 +94,7 @@ function increment() {
 </script>
 
 <template>
-  <h1>{{ price }}</h1>　<!-- ※注意：increment()で変数をインクリメントしているが、ここの表示は変わらない -->
+  <h1>{{ price }}</h1>  <!-- ※注意：increment()で変数をインクリメントしているが、ここの表示は変わらない -->
   <button @click="increment"> + </button>
 </template>
 ```
@@ -121,7 +121,7 @@ function increment() {
 
 <template>
   <h1>{{ price }}</h1> <!-- ボタンを押すたびにインクリメントされた値が表示される。 -->
-  <!--　※1：template内では、'.value'は不要。 -->
+  <!--  ※1：template内では、'.value'は不要。 -->
   <button @click="increment"> + </button>
 </template>
 ```
@@ -608,7 +608,7 @@ defineProps({
 ```
 
 ただし、props は、読み取り専用であるため、props のデータを直接更新することはできない。
-更新する場合は、props で渡しているデータを更新する必要がある。上記の例の場合、　`hoge`の値を更新することで、子コンポーネントにも変更が反映される。
+更新する場合は、props で渡しているデータを更新する必要がある。上記の例の場合、  `hoge`の値を更新することで、子コンポーネントにも変更が反映される。
 
 ## emit：子コンポーネントから親コンポーネントへデータを受け渡す
 
