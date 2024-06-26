@@ -1,11 +1,11 @@
 ---
 title: bladeからVue.jsに書き直した話
 tags:
-  - Vue.js
   - Laravel
+  - Vue.js
 private: false
-updated_at: ''
-id: null
+updated_at: '2024-06-26T16:04:33+09:00'
+id: f8c9d39d1dbb911b4e06
 organization_url_name: null
 slide: false
 ignorePublish: false
